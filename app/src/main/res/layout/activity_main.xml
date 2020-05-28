@@ -9,5 +9,42 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
+    android:background="@color/app_background"
     tools:context=".MainActivity">
+
+    <!-- Set The Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:background="@color/title_background"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="4dp"
+        android:text="@string/title"
+        android:textColor="#fff"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/ask_button"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ball"
+        android:layout_marginTop="114dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/button_background"
+        android:text="@string/button_text"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        />
+
+    <ImageView
+        android:id="@+id/ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/ball3" />
+
 </RelativeLayout>
